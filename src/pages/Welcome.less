@@ -1,0 +1,157 @@
+@import '~antd/lib/style/themes/default.less';
+
+.actived{
+  color:blueviolet;
+}
+
+.timepicker{
+    margin-right: 5px;
+}
+.chartCard {
+  position: relative;
+  .cardTop {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .chartTopMargin {
+    margin-bottom: 8px;
+  }
+  .chartTopHasMargin {
+    margin-bottom: 10px;
+  }
+  .metaWrap {
+    float: left;
+  }
+  .avatar {
+    position: relative;
+    top: 4px;
+    float: left;
+    margin-right: 20px;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .meta {
+    height: 22px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    line-height: 22px;
+  }
+  .title{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .action {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .total {
+    height: 38px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    overflow: hidden;
+    color: @heading-color;
+    font-size: 30px;
+    line-height: 38px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+  }
+  .contentFixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer {
+    margin-top: 8px;
+    padding-top: 9px;
+    border-top: 1px solid @border-color-split;
+    & > * {
+      position: relative;
+    }
+  }
+  .footerMargin {
+    margin-top: 20px;
+  }
+}
+.content{
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.rankingTitle {
+  margin-top: 6px;
+  padding: 0px;
+}
+.rankingList {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    zoom: 1;
+    &::before,
+    &::after {
+      display: table;
+      content: ' ';
+    }
+    &::after {
+      clear: both;
+      height: 0;
+      font-size: 0;
+      visibility: hidden;
+    }
+    span {
+      color: @text-color;
+      font-size: 10px;
+      line-height: 14px;
+    }
+    .rankingItemNumber {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-top: 1.5px;
+      margin-right: 16px;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      background-color: @tag-default-bg;
+      border-radius: 20px;
+      &.active {
+        color: #fff;
+        background-color: #314659;
+      }
+    }
+    .rankingItemTitle {
+      flex: 1;
+      margin-right: 8px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+@media screen and (max-width: @screen-lg) {
+  .rankingList {
+    li {
+      span:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+

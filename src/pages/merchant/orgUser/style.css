@@ -1,0 +1,9 @@
+  .update-password.error{
+    color:#ff0000;
+  };
+  .update-password.warning {
+    color: #ff7e05;
+  };
+  .update-password.success {
+    color: #52c41a;
+  };

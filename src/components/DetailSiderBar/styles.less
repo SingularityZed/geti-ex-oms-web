@@ -1,0 +1,30 @@
+@import '~antd/es/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.affix {
+  width: 100px;
+  position: fixed;
+  bottom: 100px;
+  right: 2px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+
+  div {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    // border-radius: 50%;
+    background-color: #1890FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div:hover {
+    background-color: #1890FF;
+  }
+}
